@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-deploy tomcat</actionName>
+            <displayName>deploy tomcat</displayName>
+            <goals>
+                <goal>tomcat:deploy</goal>
+            </goals>
+        </action>
+        <action>
+            <actionName>CUSTOM-deploy war to tomcat webapps ROOT</actionName>
+            <displayName>deploy war to tomcat webapps ROOT</displayName>
+            <goals>
+                <goal>war:war</goal>
+            </goals>
+        </action>
+    </actions>

@@ -1,0 +1,3 @@
+com\sebicom\web\config\AppConfig.class
+com\sebicom\web\controller\SearchController.class
+com\sebicom\web\app\WebAppInitializer.class

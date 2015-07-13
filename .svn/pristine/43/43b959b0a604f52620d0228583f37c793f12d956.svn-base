@@ -1,0 +1,23 @@
+# set log level for root logger 
+log4j.rootLogger=DEBUG,stdout, R
+
+# set log level for app components
+log4j.logger.com.sebik=DEBUG
+log4j.logger.org.apache.commons.beanutils=ERROR
+log4j.logger.org.springframework=ERROR
+log4j.logger.org.elasticsearch=INFO
+
+# add a ConsoleAppender to the logger stdout to write to the console
+log4j.appender.stdout=org.apache.log4j.ConsoleAppender
+log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
+# use a simple message format
+log4j.appender.stdout.layout.ConversionPattern=%d  %-5p  [%c{10}] %m %n
+
+
+log4j.appender.R=org.apache.log4j.RollingFileAppender
+log4j.appender.R.File=d:/var/log/domain.log
+log4j.appender.R.MaxFileSize=5000KB
+log4j.appender.R.MaxBackupIndex=2
+log4j.appender.R.layout=org.apache.log4j.PatternLayout
+log4j.appender.R.layout.ConversionPattern=%d  %-5p  [%c{10}] %m %n
+
